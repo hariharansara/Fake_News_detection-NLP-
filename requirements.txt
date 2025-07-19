@@ -2,5 +2,5 @@ Flask==3.0.0
 scikit-learn==1.5.1
 nltk==3.8.1
 joblib==1.4.2
-pandas==2.2.2
+pandas==1.5.3  # <-- This is the changed line
 gunicorn==22.0.0
