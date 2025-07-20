@@ -2,8 +2,7 @@
 # exit on error
 set -o errexit
 
-# Install the dependencies from requirements.txt
 pip install -r requirements.txt
 
-# Run a Python script to download the NLTK data
-python -c "import nltk; nltk.download('stopwords'); nltk.download('punkt'); nltk.download('wordnet')"
+# Create a directory for the NLTK data and download the required packages to it
+python -c "import nltk; nltk.download('stopwords', download_dir='./nltk_data'); nltk.download('punkt', download_dir='./nltk_data'); nltk.download('wordnet', download_dir='./nltk_data')"
