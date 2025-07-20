@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 import joblib
 import re
 import nltk
-
+import os
 nltk.data.path.append(os.path.join(os.path.dirname(__file__), 'nltk_data'))
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
